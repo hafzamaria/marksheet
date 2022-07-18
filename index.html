@@ -12,63 +12,68 @@
 </head>
 
 <body>
-    <div class="container"> 
+    <div class="container">
         <h1>MarkSheet App</h1>
-        </div>
+    </div>
     <div class="main">
-    
-     <div class="flexbox">
-    
-    <form onsubmit="calculate(); return false;">
-        <!-- <input class="eng1" placeholder="English Marks OutOf 100" readonly id="English">  -->
 
-        <label for="English">English:</label>
-        <input type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="English">
-        <br>
-        <br> 
-        <label for="Urdu">Urdu:</label>
-        <input class="urdu" type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="Urdu">
-        <br>
-        <br> 
-        <label for="Maths">Maths:</label>
-        <input class="math" type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="Maths">
-        <br>
-        <br> 
-        <label for="Science">Science:</label>
-        <input class="sci2" type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="Science"> <br>
-        <br>
+        <div class="flexbox">
 
-        <label for="Biology">Biology:</label>
-        <input type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="Biology"> <br>
-        <br>
+            <form onsubmit="calculate(); return false;">
+                <!-- <input class="eng1" placeholder="English Marks OutOf 100" readonly id="English">  -->
 
-        <label for="Chemistry">Chemist:</label>
-        <input type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="Chemistry"> <br>
-        <br>
-        <label for="Physics">Physics:</label>
-        <input class="phy" type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="Physics"> <br>
-        <br>
-        <label for="Sindhi">Sindhi:</label>
-        <input class="sin" type="number" min="1" max="100" placeholder="EnterYourTotalMarks" id="Sindhi"> <br>
-        <br>
-        <label for="Computer">Compu:</label>
-        <input type="number" min="1" max="100" required placeholder="EnterYourTotalMarks" id="Computer"> <br>
-        <br>
-        <label for="Islamiat">Islamiat:</label>
-        <input type="number" min="1" max="100" required placeholder="EnterYourTotalMarks" id="Islamiat"> <br>
-        <br>
-        
-        <button class="but" type="submit">calculate</button>
-        
-    </form>
-</div>
-<div class="result">
-    <h2>Your Result Is Here....</h2>
-    <P id="Result"></P>
-    <P id="ObtainedMarks"></P>
-    <p id="result"></p>
-</div>
-</div>
+                <label for="English">English:</label>
+                <input type="number" min="1" max="100" required placeholder="EnterYourTotalMarks" id="English">
+                <br>
+                <br>
+                <label for="Urdu">Urdu:</label>
+                <input class="urdu" type="number" min="1" max="100" required placeholder="EnterYourTotalMarks"
+                    id="Urdu">
+                <br>
+                <br>
+                <label for="Maths">Maths:</label>
+                <input class="math" type="number" min="1" max="100" required placeholder="EnterYourTotalMarks"
+                    id="Maths">
+                <br>
+                <br>
+                <label for="Science">Science:</label>
+                <input class="sci2" type="number" min="1" max="100" required placeholder="EnterYourTotalMarks"
+                    id="Science"> <br>
+                <br>
+
+                <label for="Biology">Biology:</label>
+                <input type="number" min="1" max="100" required placeholder="EnterYourTotalMarks" id="Biology"> <br>
+                <br>
+
+                <label for="Chemistry">Chemist:</label>
+                <input type="number" min="1" max="100" required placeholder="EnterYourTotalMarks" id="Chemistry"> <br>
+                <br>
+                <label for="Physics">Physics:</label>
+                <input class="phy" type="number" min="1" max="100" required placeholder="EnterYourTotalMarks"
+                    id="Physics"> <br>
+                <br>
+                <label for="Sindhi">Sindhi:</label>
+                <input class="sin" type="number" min="1" max="100" required placeholder="EnterYourTotalMarks"
+                    id="Sindhi"> <br>
+                <br>
+                <label for="Computer">Compu:</label>
+                <input type="number" min="1" max="100" required placeholder="EnterYourTotalMarks" id="Computer"> <br>
+                <br>
+                <label for="Islamiat">Islamiat:</label>
+                <input type="number" min="1" max="100" required placeholder="EnterYourTotalMarks" id="Islamiat"> <br>
+                <br>
+
+                <button class="but" type="submit">calculate</button>
+
+            </form>
+        </div>
+        <div class="result">
+            <h2>Your Result Is Here....</h2>
+            <P id="Result"></P>
+            <P id="ObtainedMarks"></P>
+            <p id="result"></p>
+        </div>
+    </div>
     <script>
         function calculate() {
             let totalMarks = 1000;
