@@ -1,5 +1,6 @@
 body {
     background-image: url(https://images.unsplash.com/photo-1657751043292-aea852641ab4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aVVJc25WdGpCMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+    box-sizing: border-box;
 }
 
 .main {
@@ -9,13 +10,29 @@ body {
 }
 
 .container {
-    color: ;
+    
     font-size: 35px;
     text-align: center;
     margin-top: -35px;
 
 
 }
+
+.result:hover {
+
+    width: 280px;
+    height: 295px;
+    font-size: 15px;
+    margin-top: 25px;
+}
+.result{
+    margin-top: 24px;
+    box-shadow: -15px 20px 30px grey;
+
+}
+
+
+
 
 form {
     border: 5px solid rgb(230, 221, 221);
@@ -24,6 +41,8 @@ form {
     border-top-left-radius: 50px;
     box-shadow: -30px -13px 38px grey;
     /* background-color: silver; */
+    height: 400px;
+    width:250px ;
 }
 
 form:hover {
@@ -51,7 +70,7 @@ input:hover {
     background-color: white;
     color: grey;
     border: 2px solid white;
-    width: 250px;
+    /* width: 250px; */
     height: 50px;
     font-size: 20px;
 
@@ -102,3 +121,61 @@ input:hover {
     font-style: italic;
     border-radius: 10px;
 }
+@media only screen and (max-width: 375px){
+    .container{
+        font-size: 15px;
+        margin-top: 10px;
+    
+    }
+    .main{
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 10px;
+    }
+    form{
+        width:220px ;
+        height:570px ;
+    }
+    form:hover {
+        /* color: black; */
+        /* background-color: white; */
+        /* border: silver; */
+    
+        /* border: 2px solid rgb(230, 221, 221); */
+         width: 230px; 
+        /* height: 560px; */
+ } 
+
+
+ @media only screen and (max-width: 375px){
+    .container{
+        font-size: 15px;
+        margin-top: 10px;
+    
+    }
+   
+    form{
+        width:245px ;
+        height:570px ;
+    }
+    form:hover {
+        /* color: black; */
+        /* background-color: white; */
+        /* border: silver; */
+    
+        /* border: 2px solid rgb(230, 221, 221); */
+         width: 240px; 
+        
+         
+        /* height: 560px; */}
+
+      .flexbox{
+        width: 290px;
+      }  
+        
+ } 
+
+
+
+
+
